@@ -1,0 +1,50 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "external",
+            "displayName": "Configure External Dependencies",
+            "binaryDir": "${sourceDir}/build/external",
+            "cacheVariables": {
+                "BUILD_SHARED_LIBS": "OFF",
+                "CMAKE_BUILD_TYPE": "Release",
+                "OCCT_WASM_BUILD_EXTERNAL_ONLY": "ON"
+            }
+        },
+        {
+            "name": "default",
+            "displayName": "Configure default projects",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "OCCT_WASM_BUILD_EXTERNAL_ONLY": "OFF",
+                "OCCT_WASM_BUILD_WASM": "OFF"
+            }
+        },
+        {
+            "name": "wasm",
+            "displayName": "Configure WebAssembly only",
+            "binaryDir": "${sourceDir}/build/wasm",
+            "cacheVariables": {
+                "BUILD_SHARED_LIBS": "OFF",
+                "OCCT_WASM_BUILD_EXTERNAL_ONLY": "OFF",
+                "OCCT_WASM_BUILD_WASM": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "ext_occt",
+            "configurePreset": "external",
+            "jobs": 14,
+            "displayName": "Build external dependency: OpenCASCADE",
+            "hidden": false
+        },
+        {
+            "name": "test-wasm",
+            "configurePreset": "wasm",
+            "jobs": 14,
+            "displayName": "Build WebAssembly",
+            "hidden": false
+        }
+    ]
+}

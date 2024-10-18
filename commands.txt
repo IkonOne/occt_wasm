@@ -1,0 +1,1000 @@
+ 1139  cd Fundamentals/
+ 1140  mono -V
+ 1141  apt update
+ 1142  sudo apt update
+ 1143  sudo apt install clang libglib2.0-dev python-dev-is-python3 
+ 1144  pip 
+ 1145  which pip
+ 1146  pip --version
+ 1147  pip install -U setuptools wheel pycparser
+ 1148  pip install -U pythonnet
+ 1149  sudo apt install python3-tk
+ 1150  cd development/training/occt/
+ 1151  ls
+ 1152  cd 3rd_party_install/
+ 1153  cd ..
+ 1154  cd 3rd_party_src/
+ 1155  clear
+ 1156  ls
+ 1157  make
+ 1158  cd freetype-2.13.2/
+ 1159  make
+ 1160  make clean
+ 1161  clear
+ 1162  ./configure CFLAGS='-m64 -fPIC' CPPFLAGS='-m64 -fPIC' --prefix=/home/ikonone/development/training/occt/3rd_party_install
+ 1163  make
+ 1164  make install
+ 1165  cd ..
+ 1166  ls 3rd_party_install/include/
+ 1167  ls
+ 1168  cd OCCT/
+ 1169  clear
+ 1170  ls
+ 1171  rm -rf build/
+ 1172  mkdir build
+ 1173  cd build
+ 1174  clear
+ 1175  ls
+ 1176  ccmake ..
+ 1177  make -j6
+ 1178  make
+ 1179  ccmake ..
+ 1180  make -j6
+ 1181  lscpu
+ 1182  make -j10
+ 1183  ccmake ..
+ 1184  make install
+ 1185  ccmake ..
+ 1186  make -j10
+ 1187  cd ..
+ 1188  clear
+ 1189  ls
+ 1190  code .
+ 1191  cd ..
+ 1192  clear
+ 1193  ls
+ 1194  ls OCCT/build/
+ 1195  ls OCCT/build/install/release/
+ 1196  ls
+ 1197  cd Fundamentals/
+ 1198  clear
+ 1199  ls
+ 1200  cd Code_Solution/
+ 1201  ls
+ 1202  code .
+ 1203  make
+ 1204  ninja
+ 1205  cd build/
+ 1206  ninja
+ 1207  make
+ 1208  ninja
+ 1209  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep libTKOpenGL.so
+ 1210  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep OpenGL
+ 1211  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep OpenGL
+ 1212  ls /home/ikonone/development/training/occt/3rd_party_install/lib/
+ 1213  ls lin64/
+ 1214  ls lin64/libd/
+ 1215  ninja
+ 1216  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep lib
+ 1217  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep libTK
+ 1218  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep libTKO
+ 1219  ninja
+ 1220  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep libTKOpenGL.so
+ 1221  ls /home/ikonone/development/training/occt/3rd_party_install/lib/ | grep libTKOpenG
+ 1222  ninja
+ 1223  docker run hello-world
+ 1224  docker run hello-world
+ 1225  docker
+ 1226  docker run --help
+ 1227  docker run hello-world
+ 1228  newgrp docker
+ 1229  cd ../../..
+ 1230  ls
+ 1231  cd bak/
+ 1232  ls
+ 1233  cd development/
+ 1234  ls
+ 1235  ls projects/
+ 1236  cd bak/
+ 1237  ls
+ 1238  cd cs440/
+ 1239  clear
+ 1240  ls
+ 1241  code jupyter/
+ 1242  exit
+ 1243  ls -ahlF
+ 1244  exit
+ 1245  pwd
+ 1246  exit
+ 1247  whereis boost_iostreams
+ 1248  whereis boost-iostreams
+ 1249  whereis boost
+ 1250  ls /usr/lib/
+ 1251  ls /usr/lib/cmake/
+ 1252  ls /usr/lib
+ 1253  ls /usr/lib | grep boost
+ 1254  ls /usr/local/lib/
+ 1255  ls /usr/local/lib/cmake/
+ 1256  ls /usr/share/
+ 1257  ls /usr/share/ | grep boost
+ 1258  ls /usr/share/boostbook/
+ 1259  ls /usr/share/boostbook/dtd/
+ 1260  ls /usr/share/boostbook/dtd/1.1/
+ 1261  clear
+ 1262  ls
+ 1263  exit
+ 1264  ls /usr/lib/x86_64-linux-gnu/
+ 1265  ls /usr/lib/x86_64-linux-gnu/cmake/
+ 1266  ls /usr/lib/x86_64-linux-gnu/cmake/q
+ 1267  exit
+ 1268  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1269  cd ../../..
+ 1270  ls
+ 1271  cd libs/openvdb/build/
+ 1272  ls
+ 1273  cat cmake_install.cmake 
+ 1274  clear
+ 1275  ls
+ 1276  ls CMake
+ 1277  ls CMakeFiles/
+ 1278  ls
+ 1279  ls openvdb
+ 1280  ls openvdb/openvdb/
+ 1281  ls openvdb/openvdb/cmake_install.cmake 
+ 1282  cat openvdb/openvdb/cmake_install.cmake 
+ 1283  ls /usr/local/
+ 1284  ls /usr/local/lib/
+ 1285  ls /usr/local/lib/cmake/
+ 1286  ls /usr/local/lib/cmake/OpenVDB/
+ 1287  cd /usr/local//lib/cmake/OpenVDB/
+ 1288  ls
+ 1289  vim .
+ 1290  vim FindTBB.cmake 
+ 1291  vim /usr/share/cmake-3.22/Modules/FindBoost.cmake
+ 1292  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1293  exit
+ 1294  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1295  ls
+ 1296  vdb_view mysphere.vdb 
+ 1297  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1298  vdb_view mysphere.vdb 
+ 1299  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1300  vdb_view mysphere.vdb 
+ 1301  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1302  vdb_view mysphere.vdb 
+ 1303  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1304  clear
+ 1305  cd ..
+ 1306  ls
+ 1307  mkdir third_party
+ 1308  cd third_party/
+ 1309  nvcc --version
+ 1310  whereis nvcc
+ 1311  ./usr/local/cuda-12.5/nvcc
+ 1312  ls /usr/local/cuda-12.5/
+ 1313  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1314  tar -xzf cccl-2.5.0.tar.gz 
+ 1315  ls
+ 1316  rm -rf cuda-repo-ubuntu2204-12-5-local_12.5.1-555.42.06-1_amd64.deb 
+ 1317  rm cccl-2.5.0.tar.gz 
+ 1318  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1319  ls
+ 1320  cd lib
+ 1321  cd development/libs/
+ 1322  ls
+ 1323  clear
+ 1324  ls
+ 1325  cd ..
+ 1326  clear
+ 1327  ls
+ 1328  cd projects/
+ 1329  ls
+ 1330  mkdir rest_material
+ 1331  cd rest_material/
+ 1332  clear
+ 1333  code .
+ 1334  cmake --version
+ 1335  cd /usr/local/lib/
+ 1336  ls
+ 1337  ls cmake/
+ 1338  ls cmake/OpenVDB/
+ 1339  ls
+ 1340  cd ..
+ 1341  ls
+ 1342  ls share/
+ 1343  ls
+ 1344  cd ..
+ 1345  ls
+ 1346  ls lib/cmake/
+ 1347  ls lib/cmake/opencascade/
+ 1348  cd ~/development/libs/openvdb/
+ 1349  ls
+ 1350  cd build/
+ 1351  ls
+ 1352  ls openvdb
+ 1353  ls openvdb/openvdb/
+ 1354  ls openvdb/openvdb/instantiations
+ 1355  ls openvdb/openvdb/instantiations.in/
+ 1356  ls openvdb/openvdb
+ 1357  ls openvdb/openvdb/openvdb/
+ 1358  ls openvdb/openvdb/CMakeFiles/
+ 1359  ls openvdb/openvdb/CMakeFiles/openvdb_static.dir/
+ 1360  ls openvdb/openvdb/CMakeFiles/openvdb_static.dir/instantiations/
+ 1361  ls openvdb/openvdb/CMakeFiles/openvdb_shared.dir/
+ 1362  ls openvdb/openvdb/CMakeFiles/openvdb_shared.dir/io/
+ 1363  cd ../..
+ 1364  ls
+ 1365  cd ../projects/
+ 1366  ls
+ 1367  cd rest_material/
+ 1368  clear
+ 1369  ls
+ 1370  ls /usr/local/lib/cmake/OpenVDB/FindOpenVDB.cmake .
+ 1371  cp /usr/local/lib/cmake/OpenVDB/FindOpenVDB.cmake .
+ 1372  ls
+ 1373  ls /usr/lib
+ 1374  ls /usr/local/lib/
+ 1375  apt info tbb
+ 1376  apt search tbb-dev
+ 1377  apt info libtbb-dev
+ 1378  apt install libtbb-dev --dry-run
+ 1379  apt-file update
+ 1380  dpkg -L libtbb-dev
+ 1381  ls /usr/lib
+ 1382  dpkg -L libtbb-dev
+ 1383  ls /usr/lib | grep tbb
+ 1384  apt search boost
+ 1385  apt search libboost
+ 1386  apt search libboost-iostreams
+ 1387  dpkg -L libboost-iostreams-dev
+ 1388  dpkg -L libboost-iostreams1.74-dev
+ 1389  dpkg -L libboost-iostreams1.74.0
+ 1390  cd ../..
+ 1391  cd libs/openvdb/
+ 1392  ls
+ 1393  cd build/
+ 1394  ls
+ 1395  cat CMakeCache.txt 
+ 1396  cat CMakeCache.txt | grep boost
+ 1397  cat CMakeCache.txt | grep iostreams
+ 1398  ls /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/
+ 1399  ls /usr/lib/x86_64-linux-gnu/cmake/boost_iostreams-1.74.0/
+ 1400  ls /usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0/
+ 1401  ls /usr/include/
+ 1402  ls /usr/include/ | grep boost
+ 1403  ls /usr/include/boost/
+ 1404  ls /usr/include/boost/iostreams/
+ 1405  clear
+ 1406  ls
+ 1407  cat CMakeCache.txt 
+ 1408  cat CMakeCache.txt | grep iostreams
+ 1409  cat /usr/lib/x86_64-linux-gnu/cmake/boost_iostreams-1.74.0/
+ 1410  cat /usr/lib/x86_64-linux-gnu/cmake/boost_iostreams-1.74.0/boost_iostreams-config.cmake 
+ 1411  cat /usr/lib/x86_64-linux-gnu/cmake/boost_iostreams-1.74.0/libboost_iostreams-variant-static.cmake 
+ 1412  clear
+ 1413  vim /usr/share/cmake-3.22/Modules/FindBoost.cmake 
+ 1414  ccmake ..
+ 1415  lear
+ 1416  ls
+ 1417  clear
+ 1418  ls
+ 1419  apt search iostreams
+ 1420  apt search libboost-iostreams
+ 1421  cd ..
+ 1422  clear
+ 1423  cd projects/
+ 1424  ls
+ 1425  cd rest_material/
+ 1426  clear
+ 1427  ls
+ 1428  cd ../..
+ 1429  cd libs/openvdb/
+ 1430  ls
+ 1431  cd build/
+ 1432  ccmake ..
+ 1433  ls /usr/include/
+ 1434  ls /usr/include/boost/
+ 1435  ls /usr/include/boost/iostreams/
+ 1436  vim /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake 
+ 1437  vim /usr/share/cmake-3.22/Modules/FindBoost.cmake 
+ 1438  ls /usr/lib
+ 1439  sudo apt install libboost-iostreams
+ 1440  sudo apt install libboost-iostreams*
+ 1441  ls /usr/lib/
+ 1442  ls /usr/share/
+ 1443  ls /usr/share/boost-build/
+ 1444  ls /usr/share/boost-build/src/
+ 1445  ls /usr/share/boost-build/src/build
+ 1446  ls /usr/local/lib/
+ 1447  ls /usr/local/lib/ | gre pboost
+ 1448  ls /usr/local/lib/ | grep boost
+ 1449  ls /usr/local/include/
+ 1450  ls /usr/local/
+ 1451  ls /usr/local/share/
+ 1452  man boost
+ 1453  man libboost
+ 1454  man boost-iostreams
+ 1455  man boost_iostreams
+ 1456  clear
+ 1457  ls
+ 1458  vim /usr/local/lib/cmake/OpenVDB/FindOpenVDB.cmake 
+ 1459  ls /usr/include/boost/
+ 1460  ls /usr/lib/cmake/
+ 1461  ls /usr/lib/ | grep boost
+ 1462  ls /usr/local/lib/cmake/
+ 1463  ls /usr/lib
+ 1464  ls /usr/lib | grep boost
+ 1465  ls /usr/include/boost/
+ 1466  vim /usr/share/cmake-3.22/Modules/FindBoost.cmake 
+ 1467  apt search libboost
+ 1468  sudo apt install libboost-all-dev 
+ 1469  whereis boost
+ 1470  vim /usr/share/cmake-3.22/Modules/FindBoost.cmak
+ 1471  vim /usr/share/cmake-3.22/Modules/FindBoost.cmake
+ 1472  whereis blosc
+ 1473  whereis Blosc
+ 1474  ls /usr/lib/x86_64-linux-gnu/
+ 1475  ls /usr/lib/x86_64-linux-gnu/ | grep blosc
+ 1476  ls /usr/include/ | grep blosc
+ 1477  htop
+ 1478  cd ../../..
+ 1479  ls
+ 1480  cd tests/
+ 1481  ls
+ 1482  git clone https://github.com/gcherchi/InteractiveAndRobustMeshBooleans.git
+ 1483  cd InteractiveAndRobustMeshBooleans/
+ 1484  ls
+ 1485  mkdir build && cd build
+ 1486  cmake .. -DCMAKE_BUILD_TYPE=Release
+ 1487  make -j8
+ 1488  ls
+ 1489  ./mesh_booleans_rotation 
+ 1490  ./mesh_booleans_stencil 
+ 1491  ls
+ 1492  open output.obj 
+ 1493  ./mesh_booleans_arap 
+ 1494  clear
+ 1495  ls
+ 1496  cd ..
+ 1497  code .
+ 1498  cd ../..
+ 1499  clear
+ 1500  ls
+ 1501  cd projects/
+ 1502  ls
+ 1503  cd rest_material/
+ 1504  clear
+ 1505  ls
+ 1506  code .
+ 1507  git init
+ 1508  vim .gitignore
+ 1509  git status
+ 1510  cd third_party/
+ 1511  git submodule add https://github.com/NVIDIA/thrust.git
+ 1512  git submodule --init --recursive
+ 1513  git submodule init --recursive
+ 1514  git submodule update --init --recursive
+ 1515  nvcc
+ 1516  nvtop 
+ 1517  nvidia-smi 
+ 1518  ls ../../
+ 1519  whereis nvcc
+ 1520  nvcc --version
+ 1521  nvtop
+ 1522  nvidia-smi 
+ 1523  sudo apt update
+ 1524  sudo apt install nvidia-cuda-toolkit
+ 1525  apt info nvidia-cuda-toolkit
+ 1526  lspci | grep -i NVIDIA
+ 1527  uname -m
+ 1528  uname -m && cat /etc/*release
+ 1529  gcc --version
+ 1530  uname -r
+ 1531  apt search cuda-toolkit
+ 1532  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+ 1533  sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+ 1534  wget https://developer.download.nvidia.com/compute/cuda/12.5.1/local_installers/cuda-repo-ubuntu2204-12-5-local_12.5.1-555.42.06-1_amd64.deb
+ 1535  sudo dpkg -i cuda-repo-ubuntu2204-12-5-local_12.5.1-555.42.06-1_amd64.deb
+ 1536  sudo cp /var/cuda-repo-ubuntu2204-12-5-local/cuda-*-keyring.gpg /usr/share/keyrings/
+ 1537  sudo apt-get update
+ 1538  sudo apt-get -y install cuda-toolkit-12-5
+ 1539  ls /usr/
+ 1540  cd /usr/
+ 1541  clear
+ 1542  ls
+ 1543  ls lib
+ 1544  sudo apt autoremove
+ 1545  ls /usr/local/lib/
+ 1546  ls /usr/lib/x86_64-linux-gnu/
+ 1547  history
+ 1548  sudo apt install apt-file
+ 1549  sudo apt-file update
+ 1550  apt list --upgradable
+ 1551  dpkg -L cuda-toolkit
+ 1552  apt search cuda-toolkit
+ 1553  apt info cuda-toolkit
+ 1554  sudo apt install cuda-toolkit
+ 1555  nvcc
+ 1556  apt search cuda-toolkit
+ 1557  apt-file search nvcc
+ 1558  apt-file find nvcc
+ 1559  sudo apt-file update
+ 1560  apt-file find nvcc
+ 1561  sudo apt-file find nvcc
+ 1562  sudo apt remove apt-file
+ 1563  clear
+ 1564  sudo apt install --dry-run cuda-toolkit-12-5
+ 1565  sudo apt autoremove
+ 1566  apt install --dry-run cuda-toolkit-12-5
+ 1567  apt install cuda-toolkit-12-5 --dry-run
+ 1568  dpkg -L cuda-toolkit-12-5
+ 1569  ls /usr/local/cuda-12.5/
+ 1570  ls /usr/local/cuda-12.5/bin/
+ 1571  apt list --upgradable
+ 1572  sudoo apt install nvidia-driver-550
+ 1573  sudo apt upgrade
+ 1574  ls /
+ 1575  ls /sys/
+ 1576  ls /etc/apt/
+ 1577  ls /etc/apt/sources.list.d/
+ 1578  cat /etc/apt/sources.list.d/google-chrome.list 
+ 1579  sudo apt update
+ 1580  apt list --upgradable
+ 1581  sudo apt upgrade
+ 1582  exit
+ 1583  /home/ikonone/development/projects/rest_material/build/rest_material
+ 1584  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.12.2-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.12.2-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1585  htop
+ 1586  clear
+ 1587  ls
+ 1588  cd development/
+ 1589  ls
+ 1590  cd projects/
+ 1591  ls
+ 1592  cd cutypy/
+ 1593  ls
+ 1594  code .
+ 1595  cd ..
+ 1596  clear
+ 1597  ls
+ 1598  cd ..
+ 1599  clear
+ 1600  ls
+ 1601  ls prototypes/
+ 1602  ls prototypes/jetpack/
+ 1603  cd prototypes/
+ 1604  ls
+ 1605  clear
+ 1606  cd ..
+ 1607  ls
+ 1608  clear
+ 1609  ls
+ 1610  cd prototypes/
+ 1611  clear
+ 1612  ls
+ 1613  mkdir tool_selection
+ 1614  cd tool_selection/
+ 1615  clear
+ 1616  ls
+ 1617  touch requirements.txt
+ 1618  pip -m venv env
+ 1619  python --version
+ 1620  python -m venv env
+ 1621  ls
+ 1622  rm requirements.txt 
+ 1623  code .
+ 1624  ls
+ 1625  zip
+ 1626  zip tool_selection.zip featuretype.STL requirements.txt tool_selection.ipynb 
+ 1627  ls
+ 1628  ll
+ 1629  pip install -r requirements.txt 
+ 1630  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1631  exit
+ 1632  npm i opencascade.js
+ 1633  npm i --save-dev @types/opencascade.js
+ 1634  npm i opencascade.js@2.0.0-beta.4fa3125
+ 1635  npm i
+ 1636  npm start
+ 1637  npm init -y && npm install typescript opencascade-js monaco-editor
+ 1638  npm i -g npm@10.8.2
+ 1639  npm install -g npm
+ 1640  npm install monaco-editor
+ 1641  npm install opencascade.js
+ 1642  npm i @google/model-viewer
+ 1643  npm install three
+ 1644  npm i react
+ 1645  npm install react react-dom
+ 1646  npm install three opencascade.js
+ 1647  npm install @types/react@latest @types/react-dom@latest
+ 1648  tsc
+ 1649  npm install typescript
+ 1650  tsc
+ 1651  npm run tsc
+ 1652  cd ..
+ 1653  rm deeweecad/
+ 1654  rm -r deeweecad/
+ 1655  npx create-react-app deeweecad --template typescript
+ 1656  cd deeweecad/
+ 1657  ls
+ 1658  npm start
+ 1659  npm install zustand
+ 1660  npm start
+ 1661  cd development/prototypes/
+ 1662  ls
+ 1663  mkdir deeweecad
+ 1664  cd deeweecad/
+ 1665  code .
+ 1666  cd ..
+ 1667  ls
+ 1668  mkdir as
+ 1669  cd as/
+ 1670  code .
+ 1671  ls
+ 1672  ls -al
+ 1673  rm Dockerfile 
+ 1674  touch main.cpp
+ 1675  vim main.cpp 
+ 1676  g++ main.cpp 
+ 1677  ./a.out 
+ 1678  rm a.out 
+ 1679  ls
+ 1680  code .
+ 1681  cd ~/
+ 1682  ls
+ 1683  ll
+ 1684  cd .config/
+ 1685  ls
+ 1686  cd Code/
+ 1687  ls
+ 1688  clear
+ 1689  ls
+ 1690  ls Cache
+ 1691  ls Cache/Cache_Data/
+ 1692  claer
+ 1693  ls
+ 1694  clear
+ 1695  ls
+ 1696  ls databases/
+ 1697  ls User/
+ 1698  cd User/globalStorage/
+ 1699  ls
+ 1700  ls ms-vscode-remote.remote-containers/
+ 1701  ls ms-vscode-remote.remote-containers/configs/
+ 1702  rm -rf ms-vscode-remote.remote-containers/configs/as/
+ 1703  exit
+ 1704  sudo groupadd docker
+ 1705  sudo usermod -aG docker $USER
+ 1706  exit
+ 1707  ls
+ 1708  cd ~
+ 1709  ls
+ 1710  cd development/
+ 1711  ls
+ 1712  cd projects/
+ 1713  ls
+ 1714  cd trading/
+ 1715  ls
+ 1716  code .
+ 1717  cd Downloads/
+ 1718  chmod u+x tws-latest-linux-x64.sh 
+ 1719  ./tws-latest-linux-x64.sh 
+ 1720  pip upgrade
+ 1721  pip install -r requirements.txt 
+ 1722  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1723  cd development/projects/
+ 1724  ls
+ 1725  cd trading/
+ 1726  ls
+ 1727  code .
+ 1728  pip install -r requirements.txt 
+ 1729  cat requirements.txt 
+ 1730  which python
+ 1731  python --version
+ 1732  python
+ 1733  which python
+ 1734  python --version
+ 1735  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1736  cd development/tests/
+ 1737  ls
+ 1738  mkdir ibkr
+ 1739  cd ibkr/
+ 1740  clear
+ 1741  ls
+ 1742  TOKEN='792227781949291750015438'
+ 1743  $TOKEN
+ 1744  QUERY_ID='1059505'
+ 1745  curl -X POST   -H "Content-Type: application/x-www-form-urlencoded"   -d "q=$QUERY_ID&v=3&t=$TOKEN"   "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest"
+ 1746  curl -X POST -H "Content-type: application/x-www-form-urlencoded" -d "q=4848111355&v=3&t=$TOKEN" "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement"
+ 1747  history
+ 1748  $TOKEN
+ 1749  TOKEN='792227781949291750015438'
+ 1750  QUERY_ID='1059505'
+ 1751  curl -X POST   -H "Content-Type: application/x-www-form-urlencoded"   -d "q=$QUERY_ID&v=3&t=$TOKEN"   "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest"
+ 1752  curl -X POST -H "Content-type: application/x-www-form-urlencoded" -d "q=4984732275&v=3&t=$TOKEN" "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement"
+ 1753  history
+ 1754  curl -X POST   -H "Content-Type: application/x-www-form-urlencoded"   -d "q=$QUERY_ID&v=3&t=$TOKEN"   "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest"
+ 1755  curl -X POST -H "Content-type: application/x-www-form-urlencoded" -d "q=$REF_CODE&v=3&t=$TOKEN" "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement"
+ 1756  REF_CODE='9015311204'
+ 1757  curl -X POST -H "Content-type: application/x-www-form-urlencoded" -d "q=$REF_CODE&v=3&t=$TOKEN" "https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement"
+ 1758  history
+ 1759  exit
+ 1760  pip install -r requirements.txt 
+ 1761  which python
+ 1762  pip install -r requirements.txt 
+ 1763  pip install pyyaml
+ 1764  pip install PyYaml
+ 1765  pip install alpaca-trade-api
+ 1766  pip install -r requirements.txt 
+ 1767  pip install PyYAML==5.4.1
+ 1768  pip install PyYAML==5.4.0
+ 1769  pip install cython
+ 1770  pip install -r requirements.txt 
+ 1771  pip install yfinance-cache
+ 1772  pip install yfinance_cache
+ 1773  exit
+ 1774  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.12.3-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1775  which python
+ 1776  exit
+ 1777  ls
+ 1778  cd roms/snes/
+ 1779  ls
+ 1780  ls patcher/
+ 1781  cd patcher/
+ 1782  ls
+ 1783  ll
+ 1784  chmod a+x flips-linux 
+ 1785  ./flips-linux 
+ 1786  cd ../..
+ 1787  clear
+ 1788  cd ../development/
+ 1789  clear
+ 1790  ls
+ 1791  cd projects/trading/
+ 1792  code .
+ 1793  htop
+ 1794  exit
+ 1795  htop
+ 1796  exit
+ 1797  /home/ikonone/development/projects/trading/env/bin/python /home/ikonone/development/projects/trading/studies/data.py
+ 1798  clear
+ 1799  ls
+ 1800  pip install -e lib/
+ 1801  pip install -e .
+ 1802  pip install --upgrade vectorbt
+ 1803  deactivate 
+ 1804  rm -rf env/
+ 1805  python -m venv env
+ 1806  source env/bin/activate
+ 1807  pip install -r requirements.txt 
+ 1808  which python
+ 1809  pip install -r requirements.txt 
+ 1810  pip install finta
+ 1811  pip freeze | grep backtesting
+ 1812  pip install backtesting
+ 1813  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.14.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1814  sudp apt update
+ 1815  sudo apt update
+ 1816  sudo apt install graphviz
+ 1817  sudo apt autoremove
+ 1818  pip install -e .
+ 1819  python -m build
+ 1820  pip install --upgrade build
+ 1821  python -m build
+ 1822  ls
+ 1823  ls dist/
+ 1824  rm -rf dist/
+ 1825  pip install -e .
+ 1826  pip install --editable .
+ 1827  python -c "import trading"
+ 1828  pip install -r requirements.txt 
+ 1829  pip install -r
+ 1830  pip install -r requirements.txt 
+ 1831  /bin/python /home/ikonone/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/printEnvVariablesToFile.py /home/ikonone/.vscode/extensions/ms-python.python-2024.14.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1832  npm run dev
+ 1833  npm i
+ 1834  pwd
+ 1835  ls
+ 1836  cd ..
+ 1837  exit
+ 1838  npm i zustand
+ 1839  npm run dev
+ 1840  cd development/
+ 1841  clear
+ 1842  ls
+ 1843  cd projects/
+ 1844  clear
+ 1845  ls
+ 1846  cd trading/
+ 1847  ls
+ 1848  mkdir paper-comp
+ 1849  cd paper-comp/
+ 1850  npx create-next-app@latest
+ 1851  cd ..
+ 1852  mv paper-comp/ hadrian-street-bets
+ 1853  cd hadrian-street-bets/
+ 1854  code .
+ 1855  cd ..
+ 1856  rm -rf hadrian-street-bets/
+ 1857  npx create-next-app@latest
+ 1858  cd hadrian-street-bets/
+ 1859  code .
+ 1860  cd ..
+ 1861  rm -rf hadrian-street-bets/
+ 1862  npx create-next-app@latest
+ 1863  clear
+ 1864  ls
+ 1865  cd hadrian-street-bets/
+ 1866  code .
+ 1867  npm run dev
+ 1868  npm i zustand
+ 1869  exit
+ 1870  npm i fast-xml-parser
+ 1871  exit
+ 1872  exit
+ 1873  npm i zustand
+ 1874  npm i fast-xml-parser
+ 1875  exit
+ 1876  cd development/
+ 1877  ls
+ 1878  cd projects/trading/
+ 1879  ls
+ 1880  mv hadrian-street-bets/ hsb
+ 1881  npm create vite@latest
+ 1882  cd hadrian-street-bets/
+ 1883  npm i
+ 1884  code .
+ 1885  cd ..
+ 1886  cd hsb/
+ 1887  ls
+ 1888  cd ..
+ 1889  cd hadrian-street-bets/
+ 1890  cp -r ../hsb/app/* trash
+ 1891  cp -r ../hsb/app trash
+ 1892  exit
+ 1893  npm run dev
+ 1894  clear
+ 1895  ls
+ 1896  cd development/
+ 1897  lls
+ 1898  ls
+ 1899  cd tools/
+ 1900  ls
+ 1901  clear
+ 1902  git clone https://github.com/emscripten-core/emsdk.git
+ 1903  cd emsdk/
+ 1904  git pull
+ 1905  ./emsdk install latest
+ 1906  ./emsdk activate latest
+ 1907  echo 'source "/home/ikonone/development/tools/emsdk/emsdk_env.sh"' >> $HOME/.bash_profile
+ 1908  exit
+ 1909  sudo apt install rapidjson-dev 
+ 1910  htop
+ 1911  exit
+ 1912  /home/ikonone/development/projects/occt_wasm/build/occt_wasm
+ 1913  ./emcc -v
+ 1914  emcc -v
+ 1915  cd ../../..
+ 1916  cd tools/emsdk/
+ 1917  ./emcc -v
+ 1918  exit
+ 1919  htop
+ 1920  emcc
+ 1921  clear
+ 1922  ls
+ 1923  exit
+ 1924  emcc
+ 1925  exit
+ 1926  /home/ikonone/development/projects/occt_wasm/build/occt_wasm
+ 1927  emcc
+ 1928  clear
+ 1929  ls
+ 1930  clear
+ 1931  ls
+ 1932  emcc -v
+ 1933  ls
+ 1934  cat .bashrc 
+ 1935  vim .bashrc 
+ 1936  vim .bash_profile 
+ 1937  exit
+ 1938  emcc
+ 1939  exit
+ 1940  cd development/
+ 1941  lls
+ 1942  ls
+ 1943  clear
+ 1944  cd projects/occt_wasm/
+ 1945  ls
+ 1946  mkdir build_wasm
+ 1947  cd build
+ 1948  emconfigure cmake ..
+ 1949  emcmake ..
+ 1950  emcmake cmake ..
+ 1951  cd ..
+ 1952  rm -rf build
+ 1953  cd build_wasm/
+ 1954  emcmake cmake ..
+ 1955  cd ..
+ 1956  cd build_wasm/
+ 1957  cmake ..
+ 1958  cmake --build ext_occt
+ 1959  emcmake cmake ..
+ 1960  cmake ..
+ 1961  cd ..
+ 1962  rm -rf build_wasm/
+ 1963  mkdir build_wasm
+ 1964  cd build_wasm/
+ 1965  cmake ..
+ 1966  cd ..
+ 1967  rm -rf build_wasm/
+ 1968  apt search opencascade
+ 1969  sudo apt remove liboce-*
+ 1970  cmake ..
+ 1971  mkdir build_wasm
+ 1972  cd build_wasm/
+ 1973  emcmake cmake ..
+ 1974  cmake ..
+ 1975  cd ..
+ 1976  rm -rf build_wasm/
+ 1977  mkdir build_wasm
+ 1978  cd build_wasm
+ 1979  cmake ..
+ 1980  cd ..
+ 1981  ls
+ 1982  cd ..
+ 1983  cd libs/
+ 1984  ls
+ 1985  cd ..
+ 1986  clear
+ 1987  ls
+ 1988  cd tools/
+ 1989  ls
+ 1990  cd ..
+ 1991  clear
+ 1992  ls
+ 1993  ls prototypes/
+ 1994  ls prototypes/tool_selection/
+ 1995  open prototypes/tool_selection/featuretype.STL 
+ 1996  clear
+ 1997  npm i nivo
+ 1998  npm i @nivo/core @nivo/line
+ 1999  npm run dev
+ 2000  cd development/
+ 2001  clear
+ 2002  ls
+ 2003  cd projects/occt_wasm/
+ 2004  ls
+ 2005  cd build_wasm/
+ 2006  ls
+ 2007  rm -rf ./*
+ 2008  ls
+ 2009  emcmake cmake ..
+ 2010  rm -rf ./*
+ 2011  emcmake cmake ..
+ 2012  cd ..
+ 2013  cd build_wasm/
+ 2014  clear
+ 2015  ls
+ 2016  rm -rf ./*
+ 2017  emcmake cmake ..
+ 2018  emcmake cmake --config Debug --target ext_occt
+ 2019  cmake --config Debug --target ext_occt
+ 2020  cmake . --config Debug --target ext_occt
+ 2021  cmake --build . --config Debug --target ext_occt
+ 2022  emcmake cmake ..
+ 2023  cmake --build . --config Debug --target ext_occt
+ 2024  cmake --build . --config Debug --target ext_occt -j12
+ 2025  cmake --build . --config Debug --target ext_occt -j14
+ 2026  emcmake cmake ..
+ 2027  cmake --install .
+ 2028  cmake --install . --target ext_occt
+ 2029  cmake --install
+ 2030  cmake --instal . --config Release
+ 2031  cmake --install . --config Release
+ 2032  emcmake cmake ..
+ 2033  cmake ..
+ 2034  emcmake cmake ..
+ 2035  emcmake cmake --install . --config Release
+ 2036  cmake --install . --target ext_occt --config Release
+ 2037  cmake --install .
+ 2038  cmake --install . -v
+ 2039  emcmake cmake ..
+ 2040  cmake --build . --config Debug --target ext_occt -j14
+ 2041  emcmake cmake ..
+ 2042  emcmake cmake .. --verbose
+ 2043  cmake --version
+ 2044  cmake --help
+ 2045  history
+ 2046  emcmake cmake .. --preset build-external
+ 2047  cd ..
+ 2048  emcmake cmake .. --preset build-external
+ 2049  emcmake cmake .. --preset build-external --build build_wasm
+ 2050  emcmake cmake . --build build_wasm --preset build-external
+ 2051  cmake --help | grep -S
+ 2052  cmake --help | grep S
+ 2053  emcmake cmake -S . --build build_wasm --preset build-external
+ 2054  cd build_wasm/
+ 2055  emcmake cmake -S .. --preset build-external
+ 2056  cmake --version
+ 2057  emcmake cmake -S .. --preset build-external
+ 2058  cmake --listpresets
+ 2059  cmake --list-presets
+ 2060  cmake .. --list-presets
+ 2061  cd ..
+ 2062  cmake --list-presets
+ 2063  cmake --verbose --list-presets
+ 2064  cmake --debug --list-presets
+ 2065  cmake --help
+ 2066  cmake --debug-output --list-presets
+ 2067  emcmake cmake -S .. --preset external
+ 2068  cd build_wasm/
+ 2069  emcmake cmake -S .. --preset external
+ 2070  emcmake cmake -S .. --preset ext_occt
+ 2071  cmake -s .. --list-presets
+ 2072  cd ..
+ 2073  cmake --list-presets
+ 2074  cmake --build --list-presets
+ 2075  cd build_wasm/
+ 2076  emcmake cmake --build --preset ext_occt
+ 2077  emcmake cmake -S .. --build --preset ext_occt
+ 2078  cd ..
+ 2079  cmake --build --preset ext_occt
+ 2080  cmake --build build_wsm --preset ext_occt
+ 2081  rm -rf build_wasm/
+ 2082  rm -rf build/
+ 2083  cat /usr/local/bin/custom.sh 
+ 2084  ls /usr/local/bin/
+ 2085  cat /usr/local/bin/custom_gcc_64.sh 
+ 2086  htop
+ 2087  emcmake cmake -S .. --build --preset ext_occt
+ 2088  emcmake cmake -S .. --install --preset ext_occt
+ 2089  emcmake cmake --install --preset ext_occt
+ 2090  emcmake cmake --install ext_occt
+ 2091  emcmake cmake --install
+ 2092  emcmake cmake --install .
+ 2093  cmake --install .
+ 2094  ls ..
+ 2095  ls
+ 2096  cmake --install build/
+ 2097  cmake --install build/external/
+ 2098  cd build/
+ 2099  ls
+ 2100  cmake --list-presets
+ 2101  cd ..
+ 2102  cmake --list-presets
+ 2103  emcmake cmake --preset wasm
+ 2104  cmake --list-presets
+ 2105  cmake --build . --list-presets
+ 2106  cmake --build --list-presets
+ 2107  cmake --build --preset wasm
+ 2108  cmake --build --preset test-wasm
+ 2109  ls /home/ikonone/development/tools/emsdk/upstream/emscripten/cache/sysroot/lib/cmake/
+ 2110  ls /home/ikonone/development/tools/emsdk/upstream/emscripten/cache/sysroot/lib/cmake/opencascade/
+ 2111  cmake --build --preset test-wasm
+ 2112  cmake --help | grep architecture
+ 2113  cmake --help | grep A
+ 2114  sudo apt update
+ 2115  sudo apt install gcc-multilib g++-multilib
+ 2116  cmake --build --preset test-wasm
+ 2117  cmake --list-presets
+ 2118  cmake --preset external
+ 2119  cmake --build ext_occt
+ 2120  cd build/
+ 2121  ls
+ 2122  cd external/
+ 2123  ls
+ 2124  cmake --build . ext_occt
+ 2125  cmake --build .
+ 2126  cmake --clean .
+ 2127  cmake clean
+ 2128  cd ..
+ 2129  rm -rf external/
+ 2130  cd ..
+ 2131  clear
+ 2132  ls
+ 2133  cmake -S . --preset external
+ 2134  cmake --build build/external/ 
+ 2135  cmake --build build/external/ -j$(nproc)
+ 2136  emcmake cmake --preset wasm
+ 2137  history
+ 2138  history >> commands.txt
