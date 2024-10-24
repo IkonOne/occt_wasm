@@ -1,4 +1,6 @@
-#include <occt_wasm.h>
+#include "occt_wasm.h"
+
+namespace ow {
 
 int add(int lhs, int rhs)
 {
@@ -18,4 +20,5 @@ int mul(int lhs, int rhs)
 int div(int lhs, int rhs)
 {
     return lhs / rhs;
+}
 }

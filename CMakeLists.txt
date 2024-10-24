@@ -17,23 +17,17 @@ if (UNIX OR APPLE)
     set(CXXFLAGS ${CFLAGS} -m32)
 endif()
 
-
 project(occt_wasm)
-
-option(OCCT_WASM_BUILD_EXTERNAL_ONLY CACHE ON)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include(3rdparty/find_dependencies.cmake)
+find_package(OpenCASCADE REQUIRED)
 
-if(NOT OCCT_WASM_BUILD_EXTERNAL_ONLY)
-    add_library(lib_occt_wasm STATIC
-        occt_wasm.h
-        occt_wasm.cpp
-    )
-    add_dependencies(lib_occt_wasm ext_occt)
+add_library(lib_occt_wasm STATIC
+    occt_wasm.h
+    occt_wasm.cpp
+)
 
-    add_executable(test test.cpp)
-    target_include_directories(test PRIVATE ${OpenCASCADE_INCLUDE_DIR})
-    target_link_libraries(test lib_occt_wasm ${OpenCASCADE_LIBRARIES})
-endif()
+add_executable(test test.cpp)
+target_include_directories(test PRIVATE ${OpenCASCADE_INCLUDE_DIR})
+target_link_libraries(test lib_occt_wasm ${OpenCASCADE_LIBRARIES})
