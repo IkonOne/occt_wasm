@@ -52,10 +52,15 @@ RUN emcmake cmake .. -DBUILD_SHARED_LIBS=OFF -DBUILD_LIBRARY_TYPE=Static -DBUILD
 RUN make -j$(nproc)
 RUN make install
 
-FROM build-occt AS build-AnalysisSitus
+FROM build-occt AS build-analysissitus
 WORKDIR /usr/src/AnalysisSitus
 RUN mkdir build
 WORKDIR /usr/src/AnalysisSitus/build
 RUN emcmake cmake .. -DBUILD_LIBRARIES_TYPE=Static -DBUILD_SHARED_LIB=OFF -DDISTRIBUTION_TYPE=Algo -D3RDPARTY_DIR=/emsdk/upstream/emscripten/cache/sysroot -DEigen3_DIR=/usr/share/eigen3/cmake -D3RDPARTY_OCCT_LIBRARY_DIR=/emsdk/upstream/emscripten/cache/sysroot/lib/ -D3RDPARTY_OCCT_INCLUDE_DIR=/emsdk/upstream/emscripten/cache/sysroot/include/opencascade/
 RUN make -j$(nproc)
 RUN make install
+RUN cp /usr/src/AnalysisSitus/build/src/asiActiveData/libasiActiveData.a /emsdk/upstream/emscripten/cache/sysroot/lib/
+RUN cp /usr/src/AnalysisSitus/build/src/asiAlgo/libasiAlgo.a /emsdk/upstream/emscripten/cache/sysroot/lib/
+RUN cp /usr/src/AnalysisSitus/build/src/asiAsm/libasiAsm.a /emsdk/upstream/emscripten/cache/sysroot/lib/
+RUN cp /usr/src/AnalysisSitus/build/src/asiData/libasiData.a /emsdk/upstream/emscripten/cache/sysroot/lib/
+RUN cp /usr/src/AnalysisSitus/build/src/asiEngine/libasiEngine.a /emsdk/upstream/emscripten/cache/sysroot/lib/

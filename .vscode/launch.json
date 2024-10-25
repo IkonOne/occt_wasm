@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch hello.js",
+            "type": "node",
+            "request": "launch",
+            // "program": "build/${command:cmake.launchTargetFilename}",
+            "program": "build/hello.js",
+        }
+    ]
+}
