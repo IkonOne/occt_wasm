@@ -7,13 +7,10 @@ RUN apt-get install -y \
     build-essential \
     ninja-build
 
-RUN apt-get install -y \
-    rapidjson-dev
-
 FROM base AS gather-dependencies
 
 WORKDIR /usr/src
-RUN git clone https://github.com/Tencent/rapidjson.git
+RUN git clone --branch v1.1.0 https://github.com/Tencent/rapidjson.git
 
 
 WORKDIR /usr/src
@@ -35,13 +32,10 @@ COPY patches/ /usr/src/patches/
 
 FROM gather-dependencies AS build-rapidjson
 WORKDIR /usr/src/rapidjson
-RUN mkdir build
-WORKDIR /usr/src/rapidjson/build
-RUN cmake ..
-RUN make -j$(nproc)
-RUN make install
+RUN git apply /usr/src/patches/rapidjson_remove_non_compiling_assignment_operator.patch
+RUN cp -r /usr/src/rapidjson/include/rapidjson /emsdk/upstream/emscripten/cache/sysroot/include/
 
-FROM build-rapidjson as build-freetype
+FROM build-rapidjson AS build-freetype
 WORKDIR /usr/src/freetype2
 RUN pwd
 RUN ./autogen.sh
@@ -49,7 +43,7 @@ RUN ./configure --prefix=/usr/local
 RUN make -j$(nproc)
 RUN make install
 
-FROM build-freetype as build-occt
+FROM build-freetype AS build-occt
 WORKDIR /usr/src/OCCT
 RUN git apply /usr/src/patches/occt_tag_variable_type.patch
 RUN mkdir build
@@ -58,8 +52,10 @@ RUN emcmake cmake .. -DBUILD_SHARED_LIBS=OFF -DBUILD_LIBRARY_TYPE=Static -DBUILD
 RUN make -j$(nproc)
 RUN make install
 
-FROM build-occt as build-AnalysisSitus
+FROM build-occt AS build-AnalysisSitus
 WORKDIR /usr/src/AnalysisSitus
 RUN mkdir build
 WORKDIR /usr/src/AnalysisSitus/build
-# emcmake cmake .. -DBUILD_LIBRARIES_TYPE=Static -DBUILD_SHARED_LIB=OFF -DDISTRIBUTION_TYPE=Algo -D3RDPARTY_DIR=/emsdk/upstream/emscripten/cache/sysroot -DEigen3_DIR=/usr/share/eigen3/cmake -D3RDPARTY_OCCT_LIBRARY_DIR=/emsdk/upstream/emscripten/cache/sysroot/lib/ -D3RDPARTY_OCCT_INCLUDE_DIR=/emsdk/upstream/emscripten/cache/sysroot/include/opencascade/ -DRAPIDJSON_DIR=/usr/include/
+RUN emcmake cmake .. -DBUILD_LIBRARIES_TYPE=Static -DBUILD_SHARED_LIB=OFF -DDISTRIBUTION_TYPE=Algo -D3RDPARTY_DIR=/emsdk/upstream/emscripten/cache/sysroot -DEigen3_DIR=/usr/share/eigen3/cmake -D3RDPARTY_OCCT_LIBRARY_DIR=/emsdk/upstream/emscripten/cache/sysroot/lib/ -D3RDPARTY_OCCT_INCLUDE_DIR=/emsdk/upstream/emscripten/cache/sysroot/include/opencascade/
+RUN make -j$(nproc)
+RUN make install
